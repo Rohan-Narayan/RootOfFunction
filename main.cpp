@@ -8,10 +8,12 @@
 
 #include <iostream>
 
+// Hard-coded function, x^3 + x - 5, in this case
 double func(double x){
     return x*x*x + x - 5;
 }
 void root(double tolerance, double a, double b){
+   // f(a) and f(b) should have opposite signs
     if (func(a) * func(b) >= 0)
       {
           std::cout << "No Solution\n";
